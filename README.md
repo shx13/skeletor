@@ -1,2 +1,2 @@
 # skeletor
-Simple MVC framework.
+Simple PHP MVC framework.
