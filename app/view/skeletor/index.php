@@ -4,6 +4,8 @@
     <li><a href="<?php echo Config::get('URL'); ?>">Home</a></li>
     <li>-</li>
     <li><a href="<?php echo Config::get('URL').'skeletor/'; ?>">What is Skeletor?</a></li>
+    <li>-</li>
+    <li><a href="https://github.com/shx13/skeletor">GitHub</a></li>
   </ul>
 </div>
 
