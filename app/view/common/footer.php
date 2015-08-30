@@ -9,6 +9,11 @@
     }
   }
 
+  // KINT DEBUGGER
+  echo '<div id="kint_debugger">';
+  Kint::dump($GLOBALS, $_SERVER, $_SESSION, $this);
+  echo '</div>';
+
 ?>
 
 </body>

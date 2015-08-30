@@ -37,12 +37,7 @@ body {
 
 #container {
   width: 700px;
-  height: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -300px;
-  margin-left: -350px;
+  margin: auto;
 }
 
 /*
@@ -79,4 +74,14 @@ h1 {
 p {
   font-size: 1.2em;
   margin: 1em;
+}
+
+/*
+* KINT
+*/
+
+#kint_debugger {
+  position: fixed;
+  top: 0;
+  right: 8px;
 }

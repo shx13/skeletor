@@ -1,13 +1,4 @@
 <div id="container">
-<div id="mainMenu">
-  <ul>
-    <li><a href="<?php echo Config::get('URL'); ?>">Home</a></li>
-    <li>-</li>
-    <li><a href="<?php echo Config::get('URL').'what-is-skeletor/'; ?>">What is Skeletor?</a></li>
-    <li>-</li>
-    <li><a href="https://github.com/shx13/skeletor">GitHub</a></li>
-  </ul>
-</div>
 
 <?php $this->renderFeedbackMessages(); ?>
 
@@ -24,10 +15,5 @@
   <li>Browser Size: <?php echo $this->browser['width'].'x'.$this->browser['height']; ?></li>
 
 </ul>
+
 </div>
-
-<?php
-
-  // var_dump($this);
-
-?>

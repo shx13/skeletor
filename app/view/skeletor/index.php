@@ -1,14 +1,4 @@
 <div id="container">
-<div id="mainMenu">
-  <ul>
-    <li><a href="<?php echo Config::get('URL'); ?>">Home</a></li>
-    <li>-</li>
-    <li><a href="<?php echo Config::get('URL').'skeletor/'; ?>">What is Skeletor?</a></li>
-    <li>-</li>
-    <li><a href="https://github.com/shx13/skeletor">GitHub</a></li>
-  </ul>
-</div>
-
 <?php $this->renderFeedbackMessages(); ?>
 
 <img src="<?php echo Config::get('URL'); ?>pub/img/logo.png" alt="">
@@ -25,9 +15,3 @@
 
 </ul>
 </div>
-
-<?php
-
-  // var_dump($this);
-
-?>
