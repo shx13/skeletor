@@ -26,7 +26,7 @@
   <ul>
     <li><a href="<?php echo Config::get('URL'); ?>">Home</a></li>
     <li>-</li>
-    <li><a href="<?php echo Config::get('URL').'what-is-skeletor/'; ?>">What is Skeletor?</a></li>
+    <li><a href="<?php echo Config::get('URL').'help/what-is-skeletor/'; ?>">What is Skeletor?</a></li>
     <li>-</li>
     <li><a href="<?php echo Config::get('URL').'account/new-account/'; ?>">Register</a></li>
     <li>-</li>
@@ -40,6 +40,8 @@ if(Session::get('user_logged_in') == true): ?>
 
   <ul>
     <li><a href="<?php echo Config::get('URL').'account/my-account/'; ?>">My Account</a></li>
+    <li>-</li>
+    <li><a href="<?php echo Config::get('URL').'help/code-examples/'; ?>">Code Examples</a></li>
     <li>-</li>
     <li><a href="<?php echo Config::get('URL').'account/logout/'; ?>">Log Out</a></li>
   </ul>

@@ -12,8 +12,8 @@ class Auth {
   public static function LoggedInOnly() {
     // if user is not logged in...
     if (!Session::get('user_logged_in')) {
-      Session::add('feedback_negative', 'Error. Please log-in and try again.');
-      Teleport::to('admin/login/');
+      // Session::add('feedback_negative', 'Error. Please log-in and try again.');
+      Teleport::to('error/you-shall-not-pass/log-in/');
       exit();
     }
   }
@@ -21,8 +21,8 @@ class Auth {
   public static function LoggedOutOnly() {
     // if user is logged in...
     if (Session::get('user_logged_in')) {
-      Session::add('feedback_negative', 'Error. To access this section of the website, you need to log-out first.');
-      Teleport::to('admin/control-panel/');
+      // Session::add('feedback_negative', 'Error. To access this section of the website, you need to log-out first.');
+      Teleport::to('error/you-shall-not-pass/log-out/');
       exit();
     }
   }

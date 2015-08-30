@@ -1,3 +1,5 @@
+<div id="container">
+
 <?php $this->renderFeedbackMessages(); ?>
 
 <h1>Log In</h1>

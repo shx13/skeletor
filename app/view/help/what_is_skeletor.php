@@ -1,4 +1,4 @@
-<div id="container">
+<div class="center" id="container">
 <?php $this->renderFeedbackMessages(); ?>
 
 <img src="<?php echo Config::get('URL'); ?>pub/img/logo.png" alt="">

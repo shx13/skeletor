@@ -2,10 +2,10 @@
 
 /**
 * Class Skeletor
-* Example Controller
+* Help Controller
 */
 
-class What_is_skeletorController extends Controller {
+class HelpController extends Controller {
 
   /*
   * construct from Controller class
@@ -16,12 +16,12 @@ class What_is_skeletorController extends Controller {
   }
 
   /*
-  * index page
+  * What is skeletor
   */
 
-  public function index() {
+  public function What_is_skeletor() {
 
-    $this->View->render('skeletor/index', // <-- path to rendered file
+    $this->View->render('help/what_is_skeletor', // <-- path to rendered file
                   array(
                     // declaration of extra css (always set as array), included in common/header.php
                     'extraCSS' => array('index.css', 'index2.css'),
@@ -38,7 +38,22 @@ class What_is_skeletorController extends Controller {
                     // example of extra js data
                     'browser' => Device::detectBrowserSize()
                   ));
-
   }
 
-}
+  /*
+  * Code examples
+  */
+
+  public function Code_examples() {
+
+    $this->View->render('help/code_examples', // <-- path to rendered file
+                  array(
+                    // declaration of extra css (always set as array), included in common/header.php
+                    'extraCSS' => array('index.css'),
+
+                    // declaration of extra js (always set as array), included in common/header.php
+                    'extraJS' => array('common.js')
+                  ));
+  }
+
+} // end of HelpController

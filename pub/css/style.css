@@ -25,9 +25,8 @@
 
 body {
   background: #fff;
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-family: monospace;
 }
 
 /*
@@ -36,8 +35,20 @@ body {
 
 
 #container {
-  width: 700px;
+  width: 60%;
   margin: auto;
+}
+
+code {
+  display: block;
+  width: 100%;
+  text-align: left;
+  white-space: pre;
+  border: 1px solid #000;
+  padding: 0px 10px;
+  margin: 20px 0;
+  font: bold 16px monospace;
+  background: #ddd;
 }
 
 /*
@@ -46,6 +57,7 @@ body {
 
 #mainMenu {
   margin: 1em;
+  text-align: center;
 }
 
 #mainMenu li {
@@ -68,12 +80,21 @@ body {
 
 h1 {
   font-size: 3em;
-  margin: 0.3em;
+  margin: 0.3em 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0.3em 0;
 }
 
 p {
-  font-size: 1.2em;
-  margin: 1em;
+  font-size: 1em;
+  margin: 1em 0;
+}
+
+.center {
+  text-align: center;
 }
 
 /*

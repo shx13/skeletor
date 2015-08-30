@@ -1,3 +1,5 @@
+<div id="container">
+
 <?php $this->renderFeedbackMessages(); ?>
 
 <h1>Create New Account</h1>
