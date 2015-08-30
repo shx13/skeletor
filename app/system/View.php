@@ -31,7 +31,7 @@ class View
    * @param string $filename Path of the to-be-rendered view, usually folder/file(.php)
    * @param mixed $data Data to be used in the view
    */
-  public function basicRender($filename, $data = null)
+  public function renderBasic($filename, $data = null)
   {
     if ($data) {
       foreach ($data as $key => $value) {

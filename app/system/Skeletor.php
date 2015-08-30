@@ -29,12 +29,16 @@ class Skeletor {
     }
 
     // check for action: no action given ? load default action (from config)
+    // if there's action, replace hyphens with underscores to allow skeletor to load the action
     if (!$this->action_name OR (strlen($this->action_name) == 0)) {
       $this->action_name = Config::get('DEFAULT_ACTION');
+    } else {
+      $this->action_name = str_replace('-','_',$this->action_name);
     }
 
     // rename controller name to real controller class/file name ("index" to "IndexController")
-    $this->controller_name = ucwords($this->controller_name) . 'Controller';
+    // replace hyphens with underscores to allow use of hyphens in urls 
+    $this->controller_name = ucwords(str_replace('-','_',$this->controller_name)) . 'Controller';
 
     // does such a controller exist ?
     if (file_exists(Config::get('PATH_CONTROLLER') . $this->controller_name . '.php')) {

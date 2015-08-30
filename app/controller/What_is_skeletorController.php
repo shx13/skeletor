@@ -5,7 +5,7 @@
 * Example Controller
 */
 
-class SkeletorController extends Controller {
+class What_is_skeletorController extends Controller {
 
   /*
   * construct from Controller class
